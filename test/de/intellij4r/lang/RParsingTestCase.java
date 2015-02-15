@@ -95,7 +95,7 @@ public abstract class RParsingTestCase extends PlatformLiteFixture {
             getApplication().getPicoContainer().registerComponent(new AbstractComponentAdapter(ProgressManager.class.getName(), Object.class) {
                 @Override
                 public Object getComponentInstance(PicoContainer container) throws PicoInitializationException, PicoIntrospectionException {
-                    return new ProgressManagerImpl(getApplication());
+                    return new ProgressManagerImpl();
                 }
 
 
