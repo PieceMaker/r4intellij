@@ -35,7 +35,7 @@ public class RActionGroup extends DefaultActionGroup {
             return;
         }
 
-        // just enable the menu if an R file is open
-        e.getPresentation().setEnabled(data[0].getExtension().equals("R"));
+        // just enable the menu if an .r or .R file is open
+        e.getPresentation().setEnabled(data[0].getExtension().toLowerCase().equals("r"));
     }
 }
